@@ -1,4 +1,4 @@
-/* HEADER та NAV [cite: 44] */
+
 header {
     background-color: #fff;
     padding: 10px 15px;
@@ -9,7 +9,7 @@ header {
 }
 
 header img {
-    height: 30px; /* Зменшуємо логотип для хедера */
+    height: 30px; 
     width: auto;
 }
 
@@ -30,7 +30,6 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
-/* ФОРМИ (Contact Form, Login Form)  */
 form {
     max-width: 500px;
     margin: 20px auto;
@@ -65,7 +64,6 @@ textarea {
     resize: vertical;
 }
 
-/* Кнопки [cite: 51] */
 button {
     background-color: var(--accent-color);
     color: #fff;
