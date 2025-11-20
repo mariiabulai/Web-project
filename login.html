@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fitness&Health - Вхід</title>
+    <link rel="stylesheet" href="css/style.css"> 
 </head>
 <body>
     <header>
@@ -30,23 +31,23 @@
             <form action="#" method="post">
                 <div>
                     <label for="login-email">Email:</label>
-                    <input type="email" id="login-email" name="user_email" required>
+                    <input type="email" id="login-email" name="user_email" required minlength="2">
                 </div>
                 <div>
                     <label for="login-password">Пароль:</label>
-                    <input type="password" id="login-password" name="user_password" required>
+                    <input type="password" id="login-password" name="user_password" required minlength="8">
                 </div>
                 <div>
                     <button type="submit">Увійти</button>
                 </div>
             </form>
-            <p>Ще не маєте акаунту? (Тут буде посилання на реєстрацію)</p>
+            <p>Ще не маєте акаунту? (буде посилання на реєстрацію)</p>
         </section>
 
     </main>
 
     <footer>
-        <p>© 2025 Fitness&Health. Всі права захищено.</p>
+        <p>© 2025 Fitness&Health. </p>
     </footer>
 </body>
 </html>

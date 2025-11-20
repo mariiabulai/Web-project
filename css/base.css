@@ -1,0 +1,53 @@
+/* Брендбук: Основні кольори, шрифти [cite: 127, 128, 131, 132, 133, 134] */
+:root {
+    --primary-color: #102E16; /* Екстер */
+    --secondary-color: #DAE2CB; /* Квітковий Бор */
+    --accent-color: #88744B; /* Тінь (для кнопок/посилань) */
+    --text-color: #525647; /* Фускусово-сірий */
+    --light-text-color: #C6D6B1; /* Долина Кукурудзи */
+
+    /* Шрифти */
+    --font-main: 'Lato', sans-serif;
+    --font-heading: 'Playfair Display', serif;
+    --font-accent: 'Italianno', cursive; 
+}
+
+/* Скидання базових стилів */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--text-color);
+    background-color: var(--secondary-color); /* Світлий фон [cite: 128] */
+    line-height: 1.6;
+}
+
+/* Стилізація типографіки [cite: 44] */
+h1, h2, h3 {
+    font-family: var(--font-heading);
+    color: var(--primary-color);
+    margin-bottom: 0.5em;
+}
+
+h1 { font-size: 2.5em; }
+h2 { font-size: 1.8em; }
+h3 { font-size: 1.3em; }
+
+p {
+    margin-bottom: 1em;
+}
+
+/* Стилізація посилань */
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: var(--primary-color);
+}
