@@ -1,11 +1,10 @@
-/* Основний контейнер для Flexbox-верстки  */
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
 }
 
-/* Розміщення основних частин сайту */
 body {
     display: flex;
     flex-direction: column;
@@ -13,14 +12,13 @@ body {
 }
 
 main {
-    flex-grow: 1; /* Основний контент займає весь доступний простір */
+    flex-grow: 1; 
     padding: 20px 0;
 }
 
-/* Верстка секції переваг на Головній сторінці (3 колонки) */
 .features-grid {
     display: flex;
-    flex-wrap: wrap; /* Дозволяє блокам переноситись на мобільних */
+    flex-wrap: wrap; 
     gap: 20px;
     margin-top: 30px;
 }
@@ -28,14 +26,13 @@ main {
 .features-grid li {
     list-style: none;
     padding: 20px;
-    background-color: #fff; /* Білий для контрасту */
+    background-color: #fff; 
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-    flex: 1 1 calc(33.333% - 20px); /* 3 колонки на десктопі [cite: 56] */
-    min-width: 300px; /* Мінімальна ширина для адаптивності */
+    flex: 1 1 calc(33.333% - 20px); 
+    min-width: 300px; 
 }
 
-/* FOOTER */
 footer {
     background-color: var(--primary-color);
     color: var(--secondary-color);
@@ -44,11 +41,7 @@ footer {
     margin-top: auto;
 }
 
-/* Адаптивний дизайн: Медіазапити  */
-
-/* Стилі для планшетів (до 768px) */
 @media (max-width: 768px) {
-    /* Навігація стає вертикальною */
     header {
         flex-direction: column;
         align-items: flex-start;
@@ -65,9 +58,8 @@ footer {
         text-align: center;
     }
 
-    /* Блоки переваг стають вертикальними */
     .features-grid li {
-        flex: 1 1 100%; /* Займають 100% ширини */
+        flex: 1 1 100%;
         min-width: unset;
     }
 
@@ -75,7 +67,6 @@ footer {
     h2 { font-size: 1.5em; }
 }
 
-/* Стилі для мобільних телефонів (до 480px) */
 @media (max-width: 480px) {
     body {
         font-size: 0.9em;
