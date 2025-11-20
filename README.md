@@ -17,6 +17,10 @@
 /fitness-health-project
     ├── /images           # Зберігання зображень (логотип, тощо)
     ├── /css              # Зберігання файлів стилів (CSS)
+        ├── base.css
+        ├── components.css
+        ├── layout.css
+        ├── style.css
     ├── /js               # Зберігання скриптів (JavaScript)
     ├── index.html        # Головна сторінка
     ├── about.html        # Сторінка "Про сервіс"
