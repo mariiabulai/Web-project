@@ -1,3 +1,4 @@
+
 :root {
     /* Світла тема */
     --primary-color: #102E16; 
@@ -11,6 +12,13 @@
     --card-dark: #5D4037;     /* Світліший коричневий для блоків */
     --text-dark: #D7CCC8;     /* Бежевий текст */
 
+
+:root {
+    --primary-color: #102E16; 
+    --secondary-color: #DAE2CB;
+    --accent-color: #88744B; 
+    --text-color: #525647;
+    --light-text-color: #C6D6B1;
     --font-main: 'Lato', sans-serif;
     --font-heading: 'Playfair Display', serif;
 }
@@ -44,4 +52,28 @@ body.dark-theme h3 {
 h1, h2, h3 {
     font-family: var(--font-heading);
     color: var(--primary-color);
+
 }
+
+    margin-bottom: 0.5em;
+}
+
+h1 { font-size: 2.5em; }
+h2 { font-size: 1.8em; }
+h3 { font-size: 1.3em; }
+
+p {
+    margin-bottom: 1em;
+}
+
+/* посилання */
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: var(--primary-color);
+}
+

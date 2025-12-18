@@ -1,3 +1,4 @@
+
 header {
     background-color: #fff;
     padding: 15px;
@@ -7,8 +8,14 @@ header {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
+
 body.dark-theme header {
     background-color: var(--card-dark);
+
+header img {
+    height: 30px; 
+    width: auto;
+
 }
 
 /* Навігація */
@@ -25,8 +32,17 @@ nav ul li a {
     transition: 0.3s;
 }
 
+
 body.dark-theme nav ul li a {
     color: var(--text-dark);
+
+form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--light-text-color);
+    border-radius: 8px;
+
 }
 
 /* Салатова підсвітка при наведенні (Запит користувача) */
@@ -37,7 +53,29 @@ button:hover,
     color: var(--primary-color) !important;
 }
 
-/* Кнопки */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: var(--font-main);
+}
+
+textarea {
+    resize: vertical;
+}
+
+
 button {
     background-color: var(--accent-color);
     color: white;
@@ -58,3 +96,8 @@ form {
 body.dark-theme form {
     background-color: var(--card-dark);
 }
+
+button:hover {
+    background-color: var(--primary-color);
+}
+
