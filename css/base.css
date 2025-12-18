@@ -1,18 +1,20 @@
-/* Брендбук: Основні кольори, шрифти [cite: 127, 128, 131, 132, 133, 134] */
 :root {
-    --primary-color: #102E16; /* Екстер */
-    --secondary-color: #DAE2CB; /* Квітковий Бор */
-    --accent-color: #88744B; /* Тінь (для кнопок/посилань) */
-    --text-color: #525647; /* Фускусово-сірий */
-    --light-text-color: #C6D6B1; /* Долина Кукурудзи */
+    /* Світла тема */
+    --primary-color: #102E16; 
+    --secondary-color: #DAE2CB;
+    --accent-color: #88744B; 
+    --text-color: #525647;
+    --hover-color: #C6D6B1; /* Салатовий для наведення */
 
-    /* Шрифти */
+    /* Темна тема (Коричневі тони) */
+    --bg-dark: #3E2723;       /* Глибокий коричневий */
+    --card-dark: #5D4037;     /* Світліший коричневий для блоків */
+    --text-dark: #D7CCC8;     /* Бежевий текст */
+
     --font-main: 'Lato', sans-serif;
     --font-heading: 'Playfair Display', serif;
-    --font-accent: 'Italianno', cursive; 
 }
 
-/* Скидання базових стилів */
 * {
     margin: 0;
     padding: 0;
@@ -22,32 +24,24 @@
 body {
     font-family: var(--font-main);
     color: var(--text-color);
-    background-color: var(--secondary-color); /* Світлий фон [cite: 128] */
+    background-color: var(--secondary-color);
     line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-/* Стилізація типографіки [cite: 44] */
+/* Глобальний темний режим */
+body.dark-theme {
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+}
+
+body.dark-theme h1, 
+body.dark-theme h2, 
+body.dark-theme h3 {
+    color: var(--text-dark);
+}
+
 h1, h2, h3 {
     font-family: var(--font-heading);
-    color: var(--primary-color);
-    margin-bottom: 0.5em;
-}
-
-h1 { font-size: 2.5em; }
-h2 { font-size: 1.8em; }
-h3 { font-size: 1.3em; }
-
-p {
-    margin-bottom: 1em;
-}
-
-/* Стилізація посилань */
-a {
-    color: var(--accent-color);
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-a:hover {
     color: var(--primary-color);
 }

@@ -1,87 +1,38 @@
-/* Основний контейнер для Flexbox-верстки  */
-.container {
+main {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 40px 20px;
 }
 
-/* Розміщення основних частин сайту */
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-main {
-    flex-grow: 1; /* Основний контент займає весь доступний простір */
-    padding: 20px 0;
-}
-
-/* Верстка секції переваг на Головній сторінці (3 колонки) */
 .features-grid {
     display: flex;
-    flex-wrap: wrap; /* Дозволяє блокам переноситись на мобільних */
     gap: 20px;
     margin-top: 30px;
 }
 
 .features-grid li {
     list-style: none;
-    padding: 20px;
-    background-color: #fff; /* Білий для контрасту */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-    flex: 1 1 calc(33.333% - 20px); /* 3 колонки на десктопі [cite: 56] */
-    min-width: 300px; /* Мінімальна ширина для адаптивності */
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    flex: 1;
 }
 
-/* FOOTER */
+/* Картки в темному режимі */
+body.dark-theme .features-grid li {
+    background-color: var(--card-dark);
+    color: var(--text-dark);
+}
+
 footer {
     background-color: var(--primary-color);
     color: var(--secondary-color);
-    padding: 10px 0;
     text-align: center;
+    padding: 20px;
     margin-top: auto;
 }
 
-/* Адаптивний дизайн: Медіазапити  */
-
-/* Стилі для планшетів (до 768px) */
-@media (max-width: 768px) {
-    /* Навігація стає вертикальною */
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    nav ul {
-        flex-direction: column;
-        width: 100%;
-        margin-top: 10px;
-    }
-
-    nav ul li a {
-        padding: 5px 0;
-        text-align: center;
-    }
-
-    /* Блоки переваг стають вертикальними */
-    .features-grid li {
-        flex: 1 1 100%; /* Займають 100% ширини */
-        min-width: unset;
-    }
-
-    h1 { font-size: 2em; }
-    h2 { font-size: 1.5em; }
-}
-
-/* Стилі для мобільних телефонів (до 480px) */
-@media (max-width: 480px) {
-    body {
-        font-size: 0.9em;
-    }
-    
-    header {
-        padding: 10px;
-    }
+body.dark-theme footer {
+    background-color: #1B0000; /* Дуже темний коричневий для футера */
 }
